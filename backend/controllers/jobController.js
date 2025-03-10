@@ -27,6 +27,7 @@ export const postJob = catchAsyncErrors(async (req, res, next) => {
     fixedSalary,
     salaryFrom,
     salaryTo,
+    googleFormLink,
   } = req.body;
 
   if (!title || !description || !category || !country || !city || !location) {
@@ -58,6 +59,7 @@ export const postJob = catchAsyncErrors(async (req, res, next) => {
     fixedSalary,
     salaryFrom,
     salaryTo,
+    googleFormLink,
     postedBy,
   });
   res.status(200).json({

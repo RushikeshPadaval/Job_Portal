@@ -16,7 +16,7 @@ const PostJob = () => {
   const [salaryType, setSalaryType] = useState("default");
 
   const { isAuthorized, user } = useContext(Context);
-
+  const [googleFormLink, setGoogleFormLink] = useState(""); 
   const handleJobPost = async (e) => {
     e.preventDefault();
     if (salaryType === "Fixed Salary") {
@@ -41,6 +41,7 @@ const PostJob = () => {
               city,
               location,
               fixedSalary,
+              googleFormLink,
             }
           : {
               title,
@@ -51,6 +52,7 @@ const PostJob = () => {
               location,
               salaryFrom,
               salaryTo,
+              googleFormLink,
             },
         {
           withCredentials: true,
@@ -167,10 +169,17 @@ const PostJob = () => {
                       value={salaryTo}
                       onChange={(e) => setSalaryTo(e.target.value)}
                     />
-                  </div>
+           </div>
                 )}
               </div>
             </div>
+            <input
+  type="text"
+  placeholder="Enter Google Form Link"
+  value={googleFormLink}
+  onChange={(e) => setGoogleFormLink(e.target.value)}
+  required
+/> 
             <textarea
               rows="10"
               value={description}

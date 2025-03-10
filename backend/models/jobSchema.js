@@ -58,6 +58,7 @@ const jobSchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
+  googleFormLink: { type: String, required: true },
 });
 
 export const Job = mongoose.model("Job", jobSchema);

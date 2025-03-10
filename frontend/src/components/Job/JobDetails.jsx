@@ -66,7 +66,11 @@ const JobDetails = () => {
           {user && user.role === "Employer" ? (
             <></>
           ) : (
-            <Link to={`/application/${job._id}`}>Apply Now</Link>
+            <a href={job.googleFormLink} target="_blank" rel="noopener noreferrer">
+            <button className="apply-button">Apply Now</button>
+          </a>
+          
+       
           )}
         </div>
       </div>
