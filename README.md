@@ -30,9 +30,7 @@ To get a local copy up and running follow these simple steps.
 ### Installation
 
 1. Clone the repo:
-   ```sh
- https://github.com/RushikeshPadaval/Suvidha_webinternship
-   ```
+
 2. Install NPM packages:
    ```sh
    cd react-job-portal
