@@ -8,14 +8,14 @@
 - **Job Listings:** Browse through a wide range of job listings fetched from MongoDB.
 - **Application Management:** Job seekers can manage their job applications, and employers can view and manage received applications.
 - **Responsive Design:** Ensures a seamless experience across all devices.
+- **Google form integrated
 
 ## Technologies Used
 
 - **Frontend:** React.js, React Router, Bootstrap
 - **Backend:** Node.js, Express.js, MongoDB
 - **Authentication:** JWT (JSON Web Tokens), Bcrypt (for password hash)
-- **Image Upload:** Cloudinary for storing and managing uploaded images
-- **Deployment:** Vercel (frontend), Render(backend), MongoDB Atlas (database)
+
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple steps.
 
 - Node.js installed on your machine with latest version or v22.2.0 above
 - MongoDB Atlas account (or local MongoDB server)
-- Cloudinary account for image storage
+
 
 ### Installation
 
@@ -44,14 +44,9 @@ To get a local copy up and running follow these simple steps.
    - Create a `config.env` file after creating a `config folder` in the backend directory, containing the following variables:
    ```env
    PORT=
-   CLOUDINARY_API_KEY=
-   CLOUDINARY_API_SECRET=
-   CLOUDINARY_CLOUD_NAME=
    FRONTEND_URL=
    DB_URL=
-   JWT_SECRET_KEY=
-   JWT_EXPIRE=
-   COOKIE_EXPIRE=
+   
    ```
 
    Replace each value with your specific configuration details.
