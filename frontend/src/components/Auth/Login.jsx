@@ -13,12 +13,13 @@ const Login = () => {
   const [role, setRole] = useState("");
 
   const { isAuthorized, setIsAuthorized } = useContext(Context);
+  const url = "https://job-portal-backend-nh3y.onrender.com";
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/login",
+        url+"/api/v1/user/login",
         { email, password, role },
         {
           headers: {

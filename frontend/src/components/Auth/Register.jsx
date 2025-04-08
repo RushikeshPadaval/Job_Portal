@@ -15,6 +15,7 @@ const Register = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
+  const url = "https://job-portal-backend-nh3y.onrender.com"
 
   const { isAuthorized, setIsAuthorized, user, setUser } = useContext(Context);
 
@@ -22,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        url+"/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {

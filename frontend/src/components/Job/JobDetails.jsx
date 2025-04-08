@@ -9,10 +9,11 @@ const JobDetails = () => {
   const navigateTo = useNavigate();
 
   const { isAuthorized, user } = useContext(Context);
+  const url = "https://job-portal-backend-nh3y.onrender.com"
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/v1/job/${id}`, {
+      .get(url+`/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

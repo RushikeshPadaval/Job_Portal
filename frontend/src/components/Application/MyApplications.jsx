@@ -12,12 +12,13 @@ const MyApplications = () => {
 
   const { isAuthorized } = useContext(Context);
   const navigateTo = useNavigate();
+  const url = "https://job-portal-backend-nh3y.onrender.com";
 
   useEffect(() => {
     try {
       if (user && user.role === "Employer") {
         axios
-          .get("http://localhost:4000/api/v1/application/employer/getall", {
+          .get(url+"/api/v1/application/employer/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -25,7 +26,7 @@ const MyApplications = () => {
           });
       } else {
         axios
-          .get("http://localhost:4000/api/v1/application/jobseeker/getall", {
+          .get(url+"/api/v1/application/jobseeker/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -44,7 +45,7 @@ const MyApplications = () => {
   const deleteApplication = (id) => {
     try {
       axios
-        .delete(`http://localhost:4000/api/v1/application/delete/${id}`, {
+        .delete(url+`/api/v1/application/delete/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

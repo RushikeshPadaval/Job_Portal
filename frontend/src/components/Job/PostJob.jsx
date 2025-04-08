@@ -17,6 +17,7 @@ const PostJob = () => {
 
   const { isAuthorized, user } = useContext(Context);
   const [googleFormLink, setGoogleFormLink] = useState(""); 
+  const url = "https://job-portal-backend-nh3y.onrender.com";
   const handleJobPost = async (e) => {
     e.preventDefault();
     if (salaryType === "Fixed Salary") {
@@ -31,7 +32,7 @@ const PostJob = () => {
     }
     await axios
       .post(
-        "http://localhost:4000/api/v1/job/post",
+        url+"/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
               title,
