@@ -18,7 +18,7 @@ import MyJobs from "./components/Job/MyJobs";
 
 const App = () => {
   const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
-  const url = "https://job-portal-backend-nh3y.onrender.com";
+  const url = "http://localhost:5173";
   useEffect(() => {
     const fetchUser = async () => {
       try {
