@@ -64,3 +64,6 @@ Contributions are what make the open-source community such an amazing place to l
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+=======
+# Merged README
+- Combined changes from main and dev.
