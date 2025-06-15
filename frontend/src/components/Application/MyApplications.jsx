@@ -148,13 +148,6 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
             <span>CoverLetter:</span> {element.coverLetter}
           </p>
         </div>
-        <div className="resume">
-          <img
-            src={element.resume.url}
-            alt="resume"
-            onClick={() => openModal(element.resume.url)}
-          />
-        </div>
         <div className="btn_area">
           <button onClick={() => deleteApplication(element._id)}>
             Delete Application
