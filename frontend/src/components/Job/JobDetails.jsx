@@ -12,7 +12,8 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_API_URL}/api/v1/job/${id}`, {
+      .get(`https://my-backend-api-nb5u.onrender.com
+/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

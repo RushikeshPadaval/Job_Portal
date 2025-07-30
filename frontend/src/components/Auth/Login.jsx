@@ -18,7 +18,8 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/v1/user/login`,
+        `https://my-backend-api-nb5u.onrender.com
+/api/v1/user/login`,
         { email, password, role },
         {
           headers: {

@@ -10,7 +10,8 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get(`${import.meta.env.VITE_API_URL}/api/v1/job/getall`, {
+        .get(`https://my-backend-api-nb5u.onrender.com
+/api/v1/job/getall`, {
           withCredentials: true,
         })
         .then((res) => {

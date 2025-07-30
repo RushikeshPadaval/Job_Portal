@@ -23,7 +23,8 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/v1/user/getuser`,
+          `https://my-backend-api-nb5u.onrender.com
+/api/v1/user/getuser`,
           {
             withCredentials: true,
           }

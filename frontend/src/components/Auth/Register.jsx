@@ -22,7 +22,8 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/v1/user/register`,
+        `https://my-backend-api-nb5u.onrender.com
+/api/v1/user/register`,
         { name, phone, email, role, password },
         {
           headers: {

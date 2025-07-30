@@ -36,7 +36,8 @@ const Application = () => {
     
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/v1/application/post`,
+        `https://my-backend-api-nb5u.onrender.com
+/api/v1/application/post`,
         payload,
         {
           withCredentials: true,
