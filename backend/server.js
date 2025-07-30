@@ -17,3 +17,7 @@ app.use(
     tempFileDir: "/tmp/",
   })
 );
+
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
